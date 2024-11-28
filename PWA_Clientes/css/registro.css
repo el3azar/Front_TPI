@@ -1,0 +1,49 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, #EAB885, #E0CEBC);
+  }
+  
+  
+  .card {
+    border: none;
+  }
+  
+  .text-danger {
+    color: #B13A12 !important;
+  }
+  
+  .bg-light {
+    background-color: #F3E6E6 !important;
+  }
+  
+  .form-label {
+    font-weight: 600;
+  }
+  
+  .btn-primary {
+    background-color: #B13A12;
+    border-color: #B13A12;
+  }
+  
+  .btn-primary:hover {
+    background-color: #D14519;
+    border-color: #D14519;
+  }
+  
+  .badge {
+    font-size: 1rem;
+  }
+  
+  .logo-img {
+    width: 100px;
+    height: auto;
+  }
+  
+  ul.list-unstyled li i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
