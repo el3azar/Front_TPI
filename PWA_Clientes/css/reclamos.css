@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgba(234, 184, 133, 0.5); /* Fondo #EAB885 con opacidad al 50% */
+    margin: 0;
+    padding: 0;
+  }
+
+  .ancho-form {
+    width: 40%;
+    border-radius: 10px;
+    background: #ffffff; /* Fondo blanco del formulario */
+    padding: 2rem;
+  }
+
+  .textbox-size {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .form-label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+  }
+
+  .btn_iniciar_sesion {
+    background: #b72a23;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem;
+  }
+
+  .btn_iniciar_sesion:hover {
+    background: #e97670;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .close-button:hover {
+    color: #B72A23;
+    cursor: pointer;
+  }
