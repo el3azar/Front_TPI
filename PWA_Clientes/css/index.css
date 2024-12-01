@@ -1,0 +1,235 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F0E9;
+}
+
+/* Header */
+.header {
+    background-color: #E0CEBC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.header .logo {
+    height: 50px;
+}
+
+/* Redes sociales */
+.header .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Elementos desde Ticket hacia la derecha */
+.header > div:last-child {
+    margin-left: auto; /* Empujar este contenedor hacia la derecha */
+    display: flex;
+    align-items: center;
+}
+
+/* Ajustes de imágenes e íconos */
+.header img {
+    height: 30px;
+    margin: 0 5px; /* Espaciado uniforme */
+}
+
+/* Botón de enlace */
+.header a.btn-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000; /* Asegurar color negro */
+    margin: 0 10px; /* Espaciado entre elementos */
+}
+
+/* Promo Section */
+.promo-section {
+    margin: 0;
+    padding: 0;
+}
+
+.promo-left-container {
+    background: linear-gradient(239deg, #E0CEBC 42%, #EAB885 76%);
+    color: black;
+    padding: 20px;
+    min-height: 400px; /* Asegura altura mínima */
+    display: flex; /* Asegura el centrado del contenido */
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+    text-align: center;
+}
+
+.promo-price {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 8%;
+}
+
+.promo-description {
+    font-size: 1.5rem;
+    margin-bottom: 9%;
+}
+
+.promo-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Columna derecha con imagen de fondo */
+.promo-right-container {    
+    background: #E0CEBC;
+}
+.fondo_cortado{
+    background: url('/images/Promocion_Dia.png') no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    min-height: 400px; /* Altura mínima igual a la izquierda */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 31% 100%);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .promo-section .row {
+        flex-direction: column;
+    }
+
+    .promo-left-container,
+    .promo-right-container {
+        min-height: auto; /* Ajusta la altura para pantallas pequeñas */
+        width: 100%; /* Asegura que ocupen todo el ancho */
+    }
+
+    .promo-right-container {
+        background-position: center;
+    }
+}
+
+
+
+/* Categories Section */
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.category-image {
+    width: 120px; /* Tamaño uniforme para las imágenes */
+    height: 120px;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo sin deformarla */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 10px; /* Separación entre la imagen y el texto */
+}
+
+.category-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333; /* Color del texto */
+    text-align: center;
+}
+.category-link {
+    text-decoration: none; /* Elimina el subrayado del texto */
+    color: inherit; /* Mantiene el color del texto */
+    display: block; /* Asegura que el enlace abarque la imagen y el texto */
+}
+
+.category-link:hover .category-image {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+.category-link:hover .category-title {
+    color: #ff6600; /* Cambia el color del texto al pasar el mouse */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .category-title {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-title {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center; /* Para centrar el texto del call center */
+}
+
+.footer-link {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-app-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+
+.footer-logo {
+    width: 50px;
+    height: auto; /* Mantén proporción */
+}
+
+/* Línea blanca en el footer */
+.footer-line {
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Fondo blanco puro */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .footer-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer-text,
+    .footer-title,
+    .footer-link {
+        text-align: center;
+    }
+}
