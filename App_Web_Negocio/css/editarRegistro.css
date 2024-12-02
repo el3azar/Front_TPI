@@ -1,0 +1,32 @@
+body {
+    background-color: #f7f7f7;
+}
+
+/* Encabezado de la tarjeta */
+.bg-primary-tab {
+    background-color: #D9823F;
+}
+
+/* Botones personalizados */
+.btn-warning {
+    background-color: #D9823F;
+    border-color: #D9823F;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #be7e4c;
+    border-color: #be7e4c;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #cd6155;
+    border-color: #a93226;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #b03a2e;
+    border-color: #922b21;
+}
