@@ -1,0 +1,54 @@
+body {
+    background-color: #E0CEBC;
+  }
+  
+  .card {
+    border-color: #e1c699;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.bg-light-tab{
+    background-color: #EAB885
+}
+
+/* Fondo del programa de lealtad */
+.bg-light {
+  background-color: #E0CEBC !important; /* Cambiar a un tono beige claro */
+  border: 1px solid #d7bdbd; /* Borde sutil */
+  padding: 20px;
+}
+
+h5 {
+  font-weight: bold;
+  color: #000000; /* Cambiar color del texto del título */
+}
+
+
+/* Botón cerrar */
+.btn-danger {
+  background-color: #B72A23; 
+  
+}
+.btn-warning{
+    background-color: #c28f69;
+    color: white;
+    border-color: #c28f69;
+}
+
+.btn-warning:hover {
+    background-color: #c98f51; /* Nuevo color al pasar el cursor */
+    border-color: #c28f69; /* Nuevo borde */
+    color: #ffffff; /* Texto permanece blanco */
+}
+
+
+/* Etiquetas */
+.form-check-label {
+    font-weight: 500;
+    color: #000000;
+}
