@@ -94,10 +94,13 @@ body {
     font-weight: bold;
 }
 
-/*TABLA*/
-header img {
-    width: 50px;
-    margin-right: 10px;
+/*TABLA */
+
+.img-thumbnail{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 .table-container {
     padding: 30px;
@@ -165,43 +168,79 @@ header img {
     background-color: #b02a37;
     color: white;
 }
+/*PEDIDO*/
 
-/*Pedido*/
-.container {
-    background-color: #F5E4D3;
+/* Contenedor Interno */
+.inner-container {
+    max-width: 100%; /* Máximo ancho */
+    margin: auto;
+    background-color: #D9D9D9;
+    border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
-}
-
-.color-productos {
-    background-color: #FFF;
+  }
+  
+  /* Estilo de las tarjetas */
+  .card-producto {
+    background-color: #F9EBDD;
+    border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
-}
-
-.img-producto {
-    width: 60px;
-    height: 60px;
+    padding: 15px;
+    position: relative;
+  }
+  
+  /* Imagen del producto */
+  .img-producto {
+    width: 80px;
+    height: 70px;
     border-radius: 8px;
     object-fit: cover;
-}
-
-.descuentos {
-    background-color: #ECE2D0;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.total {
-    font-size: 20px;
+  }
+  
+  /* Ajustes de campos */
+  input[type="text"], select {
+    margin-left: 10px;
+  }
+  
+  /* Radio Buttons */
+  .form-check {
+    margin-right: 15px;
+  }
+  
+  /* Colores */
+  .text-danger {
+    color: #FF0000;
+  }
+  
+  .text-primary {
     color: #D67D2E;
-    font-weight: bold;
-}
-
-.forma-pago {
-    margin-top: 20px;
-}
-
-
-
+  }
+  
+  /* Botones */
+ 
+  
+  
+  .btn-danger {
+    background-color: #B72A23;
+    border-radius: 20px;
+  }
+  
+  .btn-danger:hover {
+    color: #000000;
+    background-color: #9d1c1aa8;
+  }
+  
+  .btn-secondary {
+    background-color: #9D1D1A;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgb(229, 140, 140);
+    color: #000000;
+   
+  }
+  
+  

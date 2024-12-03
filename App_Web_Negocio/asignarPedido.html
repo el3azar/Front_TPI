@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Pedidos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/asignarPedido.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Asignación de Pedidos</h1>
+        </header>
+        <section class="filter-container">
+            <label for="estado-filter" class="filter-label">Estado:</label>
+            <select id="estado-filter" class="combobox">
+                <option value="all">Todos</option>
+                <option value="in_delivery">In Delivery</option>
+                <option value="pending">En Cocina</option>
+                <option value="pending">Pendiente</option>
+                <option value="delivered">Listo</option>
+                <option value="delivered">Cancelado</option>
+            </select>
+        </section>
+        <section class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Pedido</th>
+                        <th style="width: 40%;">Dirección</th>
+                        <th>Estado</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DD/MM/YYYY</td>
+                        <td>Raviolis Apanados</td>
+                        <td>Blv. del ejército...</td>
+                        <td>In delivery</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>DD/MM/YYYY</td>
+                        <td>Raviolis Apanados</td>
+                        <td>Blv. del ejército...</td>
+                        <td>En Cocina</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>DD/MM/YYYY</td>
+                        <td>Raviolis Apanados</td>
+                        <td>Blv. del ejército...</td>
+                        <td>Cancelado</td>
+                        <td><a href="./FinalizarCompra.html" class="btn">Eliminar</a></td>
+                    </tr>
+                    <tr>
+                        <td>DD/MM/YYYY</td>
+                        <td>Raviolis Apanados</td>
+                        <td>Blv. del ejército...</td>
+                        <td>Pendiente</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>DD/MM/YYYY</td>
+                        <td>Raviolis Apanados</td>
+                        <td>Blv. del ejército...</td>
+                        <td>Listo</td>
+                        <td><button class="btn " data-bs-toggle="modal" data-bs-target="#repartidoresModal">Asignar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer class="text-center mt-4">
+            <a href="./orderManager.html" class="btn btn-secondary" title="Cerrar esta vista">Cerrar</a>
+        </footer>
+    </main>
+
+    <!-- Modal -->
+<div class="modal fade" id="repartidoresModal" tabindex="-1" aria-labelledby="repartidoresModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Encabezado del modal -->
+            <div class="modal-header ">
+                <h5 class="modal-title" id="repartidoresModalLabel">Repartidores Activos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Cuerpo del modal -->
+            <div class="modal-body">
+                <!-- Lista de repartidores -->
+                <div class="repartidor">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                        <span class="estado ms-3"></span>
+                        <p class="mb-0 ms-3 fw-bold">Nombre</p>
+                    </div>
+                    <button class="btn btn-asignar">Asignar</button>
+                </div>
+                <div class="repartidor">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                        <span class="estado ms-3"></span>
+                        <p class="mb-0 ms-3 fw-bold">Nombre</p>
+                    </div>
+                    <button class="btn btn-asignar">Asignar</button>
+                </div>
+                <div class="repartidor">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                        <span class="estado ms-3"></span>
+                        <p class="mb-0 ms-3 fw-bold">Nombre</p>
+                    </div>
+                    <button class="btn btn-asignar">Asignar</button>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
