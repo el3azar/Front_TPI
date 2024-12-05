@@ -35,7 +35,7 @@ body {
   background-color: #EAB885;
   clip-path: ellipse(67% 65% at 19% 25%);
   position: absolute;
-  top: 0;
+  top: -0.3%;
   left: -10.8%;
   border-radius: 10px;
   z-index: 2; /* Asegura que esté por encima de ellipse2 */
@@ -68,6 +68,16 @@ body {
   background: linear-gradient(0deg, #EAB885, #E0CEBC);
 
 }
+/* Tamaño reducido y centrado para los textboxes */
+.textbox-size {
+  max-width: 350px; /* Ancho máximo */
+  width: 100%; /* Responsivo para dispositivos más pequeños */
+  margin: auto; /* Centra el textbox horizontalmente */
+  text-align: center; /* Centra el texto dentro del textbox */
+  margin-top: 7%;
+  font-size: 14px; /* Reduce el tamaño del texto */
+}
+
 .alineacion {
   display: flex;
   justify-content: flex-start; /* Alinea el contenedor hacia la izquierda */
@@ -80,6 +90,7 @@ body {
 .btn_iniciar_sesion{
   background: #B72A23;
   color: white;
+  margin-top: 3%;
 }
 .btn_iniciar_sesion:hover{
   background: #e97670;
@@ -88,6 +99,8 @@ body {
 .btn_registro{
   background: #D9823F;
   color: white;
+
+  margin-bottom: 2%;
 }
 .btn_registro:hover{
   background: #dda479;
