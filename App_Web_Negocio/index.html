@@ -25,25 +25,56 @@
     <!-- Hero Section -->
     <section class="hero text-center py-5">
         <img src="./images/v71_74.png" alt="Hero Image" class="mb-4">
+        <!-- Botones -->
+    <div class="buttons">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Administrator</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Menu Manager</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Order Manager</button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Dispatcher</button>
+    </div>
     </section>
     
-    <!-- Buttons Section -->
-    <section class="buttons py-5">
-        <div class="container text-center">
-            <div class="mb-4">
-                <button id="btn_administrator"class="btn btn-lg btn-primary rounded-pill px-5 py-3">Administrator</button>
+
+    <!--MODAL INICIAR SESION-->
+    <div class="modal fade" id="modalIniciarSesion" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content custom-modal">
+            <div class="modal-body ">
+                <main class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+                    <section class="card p-4 shadow ancho-form position-relative">
+                      <header class="text-center ">
+                        <div class="ellipse-container position-relative">
+                          <div class="ellipse2"></div>
+                          <figure class="ellipse d-flex justify-content-center align-items-center">
+                            <img src="./images/v71_74.png" class="log" alt="Pizza Lovers Logo">
+                          </figure>
+                        </div>
+                        <h2 class="fw-bold text-center">Iniciar Sesión</h2>
+                      </header>
+                      
+                      
+                      <form id="iniciarSesion" class="text-center mt-4">
+                        <div class="mb-4">
+                          <label for="email" class="form-label visually-hidden">Correo Electrónico</label>
+                          <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                        </div>
+                        <div class="mb-4">
+                          <label for="password" class="form-label visually-hidden">Contraseña</label>
+                          <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn_iniciar_sesion w-50">Iniciar Sesión</button>
+                      </form>
+                    </section>
+                  </main>
             </div>
-            <div class="mb-4">
-                <button id="btn_menuManager" class="btn btn-lg btn-primary rounded-pill px-5 py-3">Menu Manager</button>
-            </div>
-            <div class="mb-4">
-                <button id="btn_orderManager" class="btn btn-lg btn-primary rounded-pill px-5 py-3">Order Manager</button>
-            </div>
-            <div class="mb-4">
-                <button id="btn_dispatcher" class="btn btn-lg btn-primary rounded-pill px-5 py-3">Dispatcher</button>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    
+    
+
+
+
 
     <!-- Footer Section -->
 <footer class="footer bg-black text-white">
@@ -116,7 +147,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/index.js"></script>
 
 </body>
 </html>
