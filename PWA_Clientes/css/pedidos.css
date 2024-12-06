@@ -70,3 +70,99 @@ h1 {
     background-color: #a0211db7;
     color: #000;
 }
+
+/* Responsividad para xs (<576px) */
+/* Responsividad para xs (<576px) */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 20px; /* Tamaño reducido del título */
+    }
+
+    .filter-container {
+        flex-direction: column; /* Coloca el filtro en una columna */
+        gap: 5px; /* Espacio más reducido */
+    }
+
+    .filter-label,
+    .combobox {
+        font-size: 14px;
+        width: 50%; /* El filtro ocupa todo el ancho */
+        text-align: center;
+    }
+
+    .table-container {
+        padding: 0 5px;
+        margin: 10px 0;
+        overflow-x: auto; /* Habilita scroll horizontal si es necesario */
+    }
+
+    .table {
+        display: table; /* Mantiene la tabla visible */
+        width: 100%; /* Asegura que ocupe el ancho del contenedor */
+        border-spacing: 0; /* Elimina espacios entre celdas */
+        font-size: 12px; /* Tamaño reducido de texto */
+    }
+
+    .table th,
+    .table td {
+        padding: 8px; /* Ajusta el espaciado interno */
+        white-space: nowrap; /* Evita el salto de línea */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .table th {
+        font-size: 13px; /* Tamaño reducido del encabezado */
+        text-transform: uppercase; /* Texto en mayúsculas */
+    }
+
+    .table td {
+        font-size: 12px; /* Tamaño reducido del texto */
+    }
+
+    .table a.btn {
+        font-size: 10px; /* Botón más compacto */
+        padding: 5px 10px; /* Reduce el padding del botón */
+    }
+}
+
+
+/* Responsividad para sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .filter-container {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .filter-label,
+    .combobox {
+        font-size: 16px;
+    }
+
+    .table-container {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    .table th {
+        font-size: 14px;
+    }
+
+    .table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .table a.btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
