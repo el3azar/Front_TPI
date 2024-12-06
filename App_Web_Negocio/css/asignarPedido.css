@@ -99,6 +99,108 @@ h1 {
     color: #000;
 }
 
+/* Responsividad para xs (<576px) */
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .filter-container {
+        flex-direction: column; /* Coloca el filtro en una columna */
+        gap: 5px;
+    }
+
+    .filter-label,
+    .combobox {
+        font-size: 14px;
+        width: 40%; /* El filtro ocupa todo el ancho */
+        text-align: center;
+    }
+
+    .table-container {
+        padding: 0 5px; /* Reduce el padding lateral */
+        overflow-x: auto; /* Permite desplazamiento horizontal */
+    }
+
+    .table {
+        width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+        font-size: 12px; /* Reduce el tamaño del texto */
+        border-spacing: 0; /* Elimina los espacios entre celdas */
+    }
+
+    .table th, 
+    .table td {
+        white-space: nowrap; /* Evita el salto de línea en las celdas */
+        padding: 8px 5px; /* Ajusta el espaciado interno */
+        font-size: 12px; /* Reduce el tamaño del texto */
+        text-align: center;
+    }
+
+    .table th {
+        font-size: 13px; /* Tamaño ligeramente mayor para el encabezado */
+        text-transform: uppercase; /* Texto en mayúsculas */
+    }
+
+    .table td {
+        font-size: 12px; /* Tamaño más pequeño en las celdas */
+    }
+
+    .table button.btn, 
+    .table a.btn {
+        font-size: 10px; /* Botones más compactos */
+        padding: 5px 8px; /* Reduce el padding */
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+        padding: 6px 12px; /* Botón ajustado */
+    }
+}
+
+
+/* Responsividad para sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .filter-container {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .filter-label,
+    .combobox {
+        font-size: 16px;
+    }
+
+    .table-container {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    .table th {
+        font-size: 14px;
+    }
+
+    .table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .table button.btn,
+    .table a.btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
 /*MODAL*/
 .modal-content {
     border-radius: 10px;
