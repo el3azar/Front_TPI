@@ -6,26 +6,30 @@ body {
 
 
 /* Estilo para el enlace "Regresar" */
+/* Botón regresar: Diseño general */
 .btn-regresar {
-  background-color: #eab88586; /* Fondo claro */
-  color: #000000; /* Texto oscuro */
-  padding: 5px 10px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 14px; /* Tamaño del texto */
-  font-weight: 500; /* Peso del texto */
-  transition: all 0.3s ease-in-out; /* Transición suave para hover */
+  background-color: #eab88586;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+
+  position: absolute; /* Mantiene el botón en la esquina superior izquierda */
+    top: 4.5%;
 }
 
 .btn-regresar:hover {
-  background-color: #b72a23e3; /* Fondo más oscuro en hover */
-  color: #ffffff; /* Texto blanco en hover */
-  text-decoration: none; /* Sin subrayado */
+  background-color: #b72a23e3;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .btn-regresar i {
-  font-size: 16px; /* Tamaño del ícono */
+  font-size: 16px;
 }
-
 
 /* Contenedor del formulario */
 .form-container {
@@ -132,4 +136,140 @@ input[type="radio"] {
   text-align: center; /* Texto centrado */
   background-color: #f8f8f8; /* Fondo claro para diferenciar */
   color: #000000; /* Color del texto */
+}
+
+
+
+/* Responsividad para xs (<576px) */
+@media (max-width: 575.98px) {
+    /* Formulario */
+    .form-container {
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    /* Botón regresar */
+    .btn-regresar {
+      position: static; /* Cambia la posición para flujo natural */
+      width: 40%; /* Botón ocupa todo el ancho */
+      text-align: center;
+      margin-top: 20px; /* Espaciado superior */
+      margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    /* Títulos y textos */
+    h3, h5 {
+        font-size: 1.2rem; /* Texto más pequeño */
+        text-align: center;
+    }
+
+    /* Inputs */
+    form .form-control {
+        font-size: 12px; /* Texto más compacto */
+        padding: 0.3rem;
+    }
+
+    /* Botón enviar */
+    .boton {
+        width: 100%; /* Botón ocupa todo el ancho */
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    /* Carrito */
+    .caja-derecha {
+        padding: 10px; /* Reduce el padding interno */
+        border: none; /* Elimina el borde en pantallas pequeñas */
+    }
+
+    .img-producto {
+        width: 60px; /* Imágenes más pequeñas */
+        height: 60px;
+    }
+
+    .puntos-utilizar,
+    .cupones {
+        width: 60px; /* Más estrecho */
+        font-size: 12px;
+    }
+
+    /* Espaciado entre productos */
+    .color-productos {
+        margin-bottom: 0.5rem;
+        padding: 0.3rem;
+    }
+}
+
+/* Responsividad para sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Formulario */
+    .form-container {
+        width: 80%; /* Más ancho */
+        padding: 20px; /* Mantiene padding */
+    }
+
+    /* Botón regresar */
+    .btn-regresar {
+      position: static; /* Cambia la posición para flujo natural */
+      width: 40%; /* Botón ocupa todo el ancho */
+      text-align: center;
+      margin-top: 20px; /* Espaciado superior */
+      margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    /* Títulos y textos */
+    h3, h5 {
+        font-size: 1.4rem; /* Texto más grande que en xs */
+    }
+
+    /* Inputs */
+    form .form-control {
+        font-size: 13px;
+        padding: 0.4rem;
+    }
+
+    /* Botón enviar */
+    .boton {
+        width: 90%; /* Botón más ancho */
+        font-size: 15px;
+        padding: 0.6rem;
+    }
+
+    /* Carrito */
+    .caja-derecha {
+        padding: 15px; /* Espaciado moderado */
+    }
+
+    .img-producto {
+        width: 70px; /* Imágenes de tamaño intermedio */
+        height: 70px;
+    }
+
+    .puntos-utilizar,
+    .cupones {
+        width: 70px; /* Más ancho que en xs */
+        font-size: 13px;
+    }
+
+    /* Espaciado entre productos */
+    .color-productos {
+        margin-bottom: 0.7rem;
+        padding: 0.4rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+  .row {
+    display: flex;
+    flex-direction: column; /* Secciones una debajo de la otra */
+    align-items: center; /* Centra horizontalmente */
+  }
+  .col-md-6 {
+    width: 100%; /* Cada columna ocupa todo el ancho */
+    margin-bottom: 20px; /* Espaciado entre las secciones */
+  }
+  .form-container,
+  .caja-derecha {
+    max-width: 90%; /* Asegura que no ocupe todo el ancho */
+  }
 }

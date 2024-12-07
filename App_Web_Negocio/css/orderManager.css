@@ -106,6 +106,99 @@ content: "";
   z-index: 2; /* Asegura que los botones estén sobre el logo */
 }
 
+/* Responsividad para xs (<576px) */
+/* Responsividad para xs (<576px) */
+@media (max-width: 575.98px) {
+  header {
+      flex-direction: row; /* Mantiene los elementos en la misma fila */
+      justify-content: space-between; /* Espaciado entre el logo y el botón */
+      align-items: center; /* Centra verticalmente */
+      padding: 10px; /* Reduce el padding para ahorrar espacio */
+  }
+
+  .ellipse-container {
+      width: 120px; /* Reduce el tamaño del contenedor */
+      height: 100px; /* Ajusta la altura proporcionalmente */
+  }
+
+  .ellipse2 {
+      width: 130px; /* Elipse exterior más pequeña */
+      height: 90px;
+      
+  }
+
+  .ellipse {
+      width: 110px; /* Elipse interior más compacta */
+      height: 80px;
+     
+  }
+
+  .logo {
+      width: 50%; /* Reduce el tamaño del logo */
+      height: auto; /* Mantiene proporciones */
+  }
+
+  .btn-estilo {
+      font-size: 12px; /* Texto más pequeño */
+      padding: 8px 10px; /* Reduce el padding interno */
+      width: auto; /* Ajusta al contenido */
+      text-align: center;
+      margin: 0; /* Elimina márgenes adicionales */
+  }
+
+  .notification-dot {
+      top: -2px; /* Ajusta la posición */
+      right: -5px;
+      width: 8px; /* Tamaño reducido */
+      height: 8px;
+  }
+}
+
+
+/* Responsividad para sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+      flex-direction: row; /* Mantén los elementos en fila */
+      justify-content: space-between;
+      padding: 15px 20px;
+  }
+
+  .ellipse-container {
+      width: 180px; /* Tamaño intermedio para el logo */
+      height: 140px;
+  }
+
+  .ellipse2 {
+      width: 190px;
+      height: 120px;
+      
+  }
+
+  .ellipse {
+      width: 170px;
+      height: 110px;
+      
+  }
+
+  .logo {
+      width: 55%; /* Ajusta el tamaño de la imagen */
+      height: 55%;
+  }
+
+  .btn-estilo {
+      width: 150px; /* Botón más estrecho */
+      font-size: 15px;
+      padding: 12px 20px;
+  }
+
+  .notification-dot {
+      top: -5px; /* Ajusta la posición del punto de notificación */
+      right: -5px;
+      width: 14px;
+      height: 14px;
+  }
+}
+
 
 .form-container {
   background-color: #FDEDD5;
@@ -114,6 +207,86 @@ content: "";
 }
 .form-label {
   font-weight: bold;
+}
+
+
+/* Responsividad para xs (<576px) */
+@media (max-width: 575.98px) {
+  .form-container {
+      padding: 15px; /* Reduce el padding interno */
+  }
+
+  .form-container form {
+      display: flex;
+      flex-direction: column; /* Apila los elementos */
+      gap: 10px; /* Espaciado entre filas */
+  }
+
+  .form-container .row {
+      flex-direction: column; /* Coloca los campos uno debajo del otro */
+  }
+
+  .form-container .form-control {
+    font-size: 12px; /* Reduce el tamaño del texto */
+    padding: 6px; /* Reduce el espacio interno */
+    width: 75%; /* Asegura que ocupen todo el ancho del contenedor */
+    height: 35px; /* Altura más compacta */
+}
+
+  .form-label {
+      font-size: 14px; /* Texto más compacto */
+  }
+}
+
+/* Responsividad para sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .form-container {
+      padding: 20px; /* Mantén un padding moderado */
+  }
+
+  .form-container .row {
+      flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+      gap: 15px; /* Espaciado entre columnas */
+  }
+
+  .form-container .col-md-6 {
+      flex: 0 0 48%; /* Los elementos ocupan aproximadamente el 48% */
+      max-width: 48%;
+  }
+
+  .form-container .form-control {
+      font-size: 15px; /* Tamaño intermedio del texto */
+      padding: 10px;
+  }
+
+  .form-label {
+      font-size: 15px; /* Texto ligeramente más grande que en xs */
+  }
+}
+
+/* Diseño actual para md y superior (768px en adelante) */
+@media (min-width: 768px) {
+  .form-container {
+      padding: 20px;
+  }
+
+  .form-container .row {
+      flex-wrap: nowrap; /* Mantiene los campos en la misma fila */
+  }
+
+  .form-container .col-md-6 {
+      flex: 0 0 50%; /* Cada elemento ocupa el 50% del ancho */
+      max-width: 50%;
+  }
+
+  .form-container .form-control {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  .form-label {
+      font-size: 16px;
+  }
 }
 
 /*TABLA */
@@ -190,17 +363,152 @@ content: "";
   background-color: #b02a37;
   color: white;
 }
+/* Combobox */
+/* Combobox y Etiqueta */
+.filter-container {
+  display: flex;
+  align-items: center; /* Alinea el texto y el combobox verticalmente */
+  gap: 10px; /* Espaciado entre la etiqueta y el combobox */
+}
+
+.filter-label {
+  font-weight: bold;
+  color: #000;
+  margin: 0; /* Elimina márgenes adicionales */
+  font-size: 16px; /* Ajusta el tamaño del texto */
+}
+
+.combobox {
+  background-color: #fdbd77;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+/* xs (<576px) */
+@media (max-width: 575.98px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.combobox {
+    width: 50%; /* Ocupa todo el ancho en dispositivos pequeños */
+    font-size: 14px;
+}
+
+  .table-container {
+      padding: 15px;
+  }
+
+  .table {
+      font-size: 12px; /* Reduce el tamaño del texto */
+  }
+
+  .table th, .table td {
+      font-size: 12px; /* Texto más pequeño */
+      padding: 5px; /* Reduce el padding */
+  }
+
+  .img-thumbnail {
+      width: 60px;
+      height: 60px;
+  }
+
+  .quantity-container {
+      width: 90px; /* Más compacto */
+      height: 25px;
+  }
+
+  .quantity-text {
+      font-size: 14px; /* Texto más pequeño */
+  }
+
+  .quantity-number-table {
+      font-size: 14px;
+  }
+}
+
+/* sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .filter-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.combobox {
+    font-size: 15px;
+    padding: 8px;
+}
+
+  .table-container {
+      padding: 20px;
+  }
+
+  .table {
+      font-size: 14px;
+  }
+
+  .table th, .table td {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .img-thumbnail {
+      width: 70px;
+      height: 70px;
+  }
+
+  .quantity-container {
+      width: 100px; /* Tamaño intermedio */
+      height: 28px;
+  }
+
+  .quantity-text {
+      font-size: 16px;
+  }
+
+  .quantity-number-table {
+      font-size: 16px;
+  }
+}
+
 /*PEDIDO*/
 
 /* Contenedor Interno */
+
 .inner-container {
-  max-width: 100%; /* Máximo ancho */
+  max-width: 50%; /* Ajusta según lo necesario */
   margin: auto;
   background-color: #D9D9D9;
   border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
+  text-align: center; /* Centra el contenido */
 }
+
+/* Estilo del Pedido */
+.pedido {
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+h5 {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Total */
+.pedido .d-flex {
+  font-size: 1.2rem;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
 
 /* Estilo de las tarjetas */
 .card-producto {
@@ -238,6 +546,55 @@ input[type="text"], select {
   color: #D67D2E;
 }
 
+/* Responsividad para xs (<576px) */
+@media (max-width: 575.98px) {
+  .inner-container {
+      max-width: 90%; /* Ocupa casi todo el ancho */
+      padding: 15px; /* Reduce el padding */
+  }
+
+  .pedido .d-flex {
+      flex-direction: column; /* Producto y precio en dos filas */
+      align-items: flex-start; /* Alinea texto a la izquierda */
+      font-size: 1rem; /* Texto más compacto */
+      margin-top: 10px;
+  }
+
+  .pedido .d-flex p {
+      margin: 0; /* Elimina márgenes innecesarios */
+  }
+
+  h5 {
+      font-size: 1.2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  #campo-total {
+      font-size: 1rem; /* Ajusta el tamaño del total */
+  }
+}
+
+/* Responsividad para sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .inner-container {
+      max-width: 70%; /* Ajusta el ancho */
+      padding: 20px; /* Padding moderado */
+  }
+
+  .pedido .d-flex {
+      font-size: 1.1rem; /* Texto más grande que en xs */
+      margin-top: 15px;
+  }
+
+  h5 {
+      font-size: 1.4rem; /* Encabezado ligeramente más grande */
+  }
+
+  #campo-total {
+      font-size: 1.2rem; /* Total más destacado */
+  }
+}
+
+
 /* Botones */
 
 
@@ -271,4 +628,37 @@ input[type="text"], select {
 }
 .categoria-seleccionada label {
   margin-right: 10px;
+}
+
+/* Responsividad para xs (<576px) */
+@media (max-width: 575.98px) {
+  footer.container {
+      flex-direction: column; /* Alinea los elementos verticalmente */
+      align-items: center; /* Centra los botones */
+      gap: 15px; /* Añade espacio entre los botones */
+      text-align: center;
+  }
+
+  .btn-danger, 
+  .btn-secondary {
+      width: 90%; /* Los botones ocupan el 90% del ancho */
+      padding: 10px; /* Reduce el padding */
+      font-size: 14px; /* Tamaño de fuente más pequeño */
+  }
+}
+
+/* Responsividad para sm (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  footer.container {
+      flex-direction: row; /* Mantén los elementos en fila */
+      align-items: center; /* Asegura que estén alineados */
+      justify-content: space-between; /* Espaciado adecuado */
+      gap: 10px; /* Añade algo de espacio entre los botones */
+  }
+
+  .btn-danger, 
+  .btn-secondary {
+      padding: 12px 20px; /* Padding ligeramente reducido */
+      font-size: 15px; /* Fuente ligeramente más pequeña */
+  }
 }
