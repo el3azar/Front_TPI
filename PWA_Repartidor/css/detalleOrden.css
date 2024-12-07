@@ -136,3 +136,65 @@ input[type="radio"] {
   background-color: #f8f8f8; /* Fondo claro para diferenciar */
   color: #000000; /* Color del texto */
 }
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h3, h5 {
+    font-size: 1.2rem; /* Reducir el tamaño de los encabezados */
+    text-align: center;
+  }
+
+  .form-control {
+    font-size: 0.9rem; /* Ajustar tamaño del texto en los inputs */
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .caja-derecha {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .w-50, .w-75 {
+    width: 100% !important; /* Forzar los contenedores a ocupar el ancho completo */
+  }
+
+  .btn {
+    font-size: 0.8rem; /* Reducir tamaño del texto en los botones */
+  }
+
+  .img-producto {
+    width: 50px; /* Reducir imágenes */
+    height: auto;
+  }
+
+  .color-productos p {
+    font-size: 0.8rem; /* Ajustar el texto de los productos */
+  }
+  
+  .btn-regresar {
+    font-size: 0.8rem; /* Reducir el tamaño del texto */
+    padding: 0.25rem 0.5rem; /* Reducir el relleno del botón */
+  }
+
+  .btn-regresar i {
+    font-size: 1rem; /* Ajustar el tamaño del icono */
+  }
+
+  header {
+    flex-wrap: wrap; /* Permitir que los elementos se apilen si es necesario */
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1rem; /* Reducir el tamaño del título */
+    margin-top: 1rem; /* Agregar espacio para evitar que el texto y el botón se sobrepongan */
+  }
+}
